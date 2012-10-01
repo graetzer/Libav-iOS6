@@ -1,0 +1,14 @@
+prefix=compiled/i386
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: Libav device handling library
+Version: 53.2.0
+Requires: libavformat = 53.21.0
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavdevice -lm -lbz2 -lz
+Libs.private: 
+Cflags: -I${includedir}
